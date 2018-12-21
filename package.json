@@ -1,18 +1,26 @@
 {
-    "name": "express-HelloWorld",
-    "description": "Hello World ExpressJS WebService",
-    "version": "0.0.1",
-    "private": true,
-    "dependencies": {
-        "express": "4.16.2",
-        "aws-serverless-express": "3.1.3"
-    },
-    "devDependencies": {
-        "mocha": "5.0.0",
-        "unit.js": "2.0.0",
-        "supertest": "3.0.0"
-    },
-    "scripts": {
-        "test": "mocha --recursive tests"
-    }
+  "name": "express-HelloWorld",
+  "description": "Hello World ExpressJS WebService",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "aws-serverless-express": "3.1.3",
+    "express": "4.16.2",
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "mocha": "5.0.0",
+    "nodemon": "^1.18.9",
+    "supertest": "3.0.0",
+    "unit.js": "2.0.0"
+  },
+  "scripts": {
+    "test": "mocha --recursive tests",
+    "dev": "yarn nodemon app.js --exec babel-node --presets=@babel/preset-env"
+  }
 }
