@@ -1,5 +1,5 @@
-import express from "express";
-import next from "next";
+var express = require("express");
+var next = require("next");
 
 const port = process.env.PORT || 8000;
 const ROOT_URL = `http://localhost:${port}`;
